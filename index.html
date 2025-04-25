@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSPIRO - Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Top Banner Ad -->
+    <div class="ad-banner"></div>
+
+    <header>
+        <h1>INSPIRO Image Converter</h1>
+    </header>
+
+    <main>
+        <!-- Sidebar Ad -->
+        <div class="ad-sidebar"></div>
+
+        <div class="converter-container">
+            <div class="upload-section">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <div class="drop-zone" id="dropZone">
+                    <p>Drag & Drop images or Click to upload</p>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <img id="imagePreview" alt="Preview">
+                <div class="file-size" id="originalSize"></div>
+            </div>
+
+            <div class="controls">
+                <div class="format-buttons">
+                    <button data-format="pdf">PDF</button>
+                    <button data-format="jpg">JPG</button>
+                    <button data-format="png">PNG</button>
+                    <button data-format="webp">WEBP</button>
+                </div>
+
+                <div class="compression-control">
+                    <label>Compression: <span id="qualityValue">80</span>%</label>
+                    <input type="range" id="quality" min="1" max="100" value="80">
+                </div>
+
+                <button class="convert-btn" id="convertBtn">Convert</button>
+            </div>
+        </div>
+
+        <!-- Inline Ad -->
+        <div class="ad-inline"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
