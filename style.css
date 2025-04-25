@@ -1,0 +1,120 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f0f2f5;
+}
+
+/* Ads Styling */
+.ad-banner {
+    height: 90px;
+    background: #ddd;
+    margin: 10px auto;
+    width: 728px;
+    max-width: 100%;
+}
+
+.ad-sidebar {
+    position: fixed;
+    right: 0;
+    width: 160px;
+    height: 600px;
+    background: #ddd;
+    margin: 20px;
+}
+
+.ad-inline {
+    width: 300px;
+    height: 250px;
+    background: #ddd;
+    margin: 20px auto;
+}
+
+/* Converter Styles */
+.converter-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.drop-zone {
+    border: 2px dashed #ccc;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.drop-zone:hover {
+    border-color: #2196F3;
+}
+
+.preview-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 10px 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.format-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.format-buttons button {
+    padding: 8px 15px;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.format-buttons button.active {
+    background: #2196F3;
+    color: white;
+}
+
+.convert-btn {
+    padding: 12px 25px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ad-sidebar {
+        display: none;
+    }
+
+    .converter-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .format-buttons {
+        justify-content: center;
+    }
+}
